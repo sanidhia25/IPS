@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center"
+    android:orientation="vertical"
+    tools:context=".OfflinePhase">
+
+    <TextView
+        android:id="@+id/textViewGPS"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:gravity="center"
+        android:text="GPS Location :" />
+
+    <ListView
+        android:id="@+id/myListView"
+        android:layout_width="match_parent"
+        android:layout_height="300dp"
+        android:layout_margin="20dp" />
+
+    <EditText
+        android:id="@+id/editX"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Enter X-coordinate"
+        android:inputType="numberDecimal" />
+
+    <EditText
+        android:id="@+id/editY"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="0dp"
+        android:ems="10"
+        android:hint="Enter Y-coordinate"
+        android:inputType="numberDecimal" />
+
+    <Button
+        android:id="@+id/sendData"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="20dp"
+        android:onClick="sendData"
+        android:text="Send Data" />
+
+</LinearLayout>

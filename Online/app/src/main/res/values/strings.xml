@@ -1,0 +1,7 @@
+<resources>
+    <string name="app_name">Online</string>
+    <string name="sNo">Sr No.</string>
+    <string name="product">product</string>
+    <string name="category">category</string>
+    <string name="price">price</string>
+</resources>
