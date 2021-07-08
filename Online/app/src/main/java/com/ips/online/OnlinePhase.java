@@ -31,6 +31,9 @@ public class OnlinePhase extends AppCompatActivity {
 
     int K = 5;
     EditText editK;
+    float theta;
+    float epsilon;
+    
 
 
     @Override
@@ -56,6 +59,13 @@ public class OnlinePhase extends AppCompatActivity {
         registerReceiver(wifiReceiver, new IntentFilter(WifiManager.SCAN_RESULTS_AVAILABLE_ACTION));
 
         setUserMACID();
+
+        HashMap<String,List<ScanResult>> RawOnlineData = scanWifiOnline();
+        Filtering OnlineFiltering = new Filtering(K,epsilon,theta, RawOnlineData);
+        HashMap<String,ModelInput> HighQualityData = OnlineFiltering.getHighQualityData();
+        //fed this HighQualityData to the Model after appropriate postprocessing according to the Model Input format.
+        //TODO: Model PrProcessing
+
 
 
     }
