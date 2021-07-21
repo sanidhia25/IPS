@@ -6,7 +6,7 @@
     android:layout_height="match_parent"
     android:gravity="center"
     android:orientation="vertical"
-    tools:context=".OfflinePhase">
+    tools:context=".offlinephase.OfflinePhase">
 
     <TextView
         android:id="@+id/textViewGPS"
@@ -27,21 +27,18 @@
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:layout_marginBottom="0dp"
         android:ems="10"
-        android:hint="Enter X-coordinate"
-        android:inputType="numberDecimal" />
+        android:hint="Enter X co-ordintaes"
+        android:inputType="textPersonName" />
 
     <EditText
         android:id="@+id/editY"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="20dp"
-        android:layout_marginTop="10dp"
-        android:layout_marginBottom="0dp"
         android:ems="10"
-        android:hint="Enter Y-coordinate"
-        android:inputType="numberDecimal" />
+        android:hint="Enter Y co-ordinates"
+        android:inputType="textPersonName" />
 
     <Button
         android:id="@+id/sendData"

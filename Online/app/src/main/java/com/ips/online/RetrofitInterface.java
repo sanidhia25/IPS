@@ -1,7 +1,8 @@
 package com.ips.online;
 
 
-import java.util.HashMap;
+import com.ips.online.offlinephase.OfflineData;
+import com.ips.online.onlinephase.OnlineData;
 
 import retrofit2.Call;
 import retrofit2.http.Body;
@@ -11,6 +12,6 @@ public interface RetrofitInterface {
     @POST("/index")
     Call<Void> executeSendLocationData(@Body OnlineData ReqBody);
 
-    @POST("/Train")
-    Call<Void> executeSendOfflineData(@Body HashMap<String,OfflineData> ReqBody);
+    @POST("/train")
+    Call<Void> executeSendOfflineData(@Body OfflineData ReqBody);
 }
